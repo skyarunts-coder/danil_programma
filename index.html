@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Пригласительное для Мельникова Данила</title>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#ffc2dc;--ink:#3d0a24;--red:#e0102f;--pink:#ff4f93;--card:#fff1f7;--muted:#7d2c55;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#4a0f2d;--ink:#ffe3ee;--card:#5e1738;--muted:#ffb3d1}}
+:root[data-theme="dark"]{--bg:#4a0f2d;--ink:#ffe3ee;--card:#5e1738;--muted:#ffb3d1}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*:before,*:after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Manrope,system-ui,sans-serif;line-height:1.55;overflow-x:hidden}
+main{position:relative;max-width:720px;margin:0 auto;padding:36px 20px 56px;text-align:center}
+.hearts{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.hearts i{position:absolute;color:var(--red);font-style:normal;animation:beat 2.4s ease-in-out infinite}
+.hearts i:nth-child(1){left:6%;top:6%;font-size:2.4rem}
+.hearts i:nth-child(2){right:8%;top:12%;font-size:1.6rem;animation-delay:.5s}
+.hearts i:nth-child(3){left:14%;top:38%;font-size:1.3rem;animation-delay:1s}
+.hearts i:nth-child(4){right:12%;top:44%;font-size:2.6rem;animation-delay:.3s}
+.hearts i:nth-child(5){left:8%;top:72%;font-size:2rem;animation-delay:.8s}
+.hearts i:nth-child(6){right:6%;top:80%;font-size:1.5rem;animation-delay:1.3s}
+@keyframes beat{50%{transform:scale(1.25)}}
+@media (prefers-reduced-motion:reduce){.hearts i{animation:none}}
+.whip{position:relative;width:min(100%,460px);height:auto;margin:0 auto}
+h1{position:relative;font-family:Unbounded,Impact,sans-serif;font-weight:800;font-size:clamp(1.9rem,8vw,3.3rem);line-height:1.1;margin:8px 0 10px;letter-spacing:-.02em}
+.sub{position:relative;font-size:1.1rem;color:var(--muted);margin:0 auto 24px;max-width:30em}
+.card{position:relative;background:var(--card);border:3px solid var(--ink);border-radius:28px;padding:24px;text-align:left;max-width:520px;margin:0 auto}
+.card dl{margin:0}
+.card dt{font-weight:600;color:var(--red);margin-top:14px}
+.card dt:first-child{margin-top:0}
+.card dd{margin:2px 0 0;font-size:1.1rem}
+.time{font-family:Unbounded,sans-serif;font-size:1.6rem}
+</style>
+</head>
+<body>
+<main>
+  <div class="hearts" aria-hidden="true"><i>♥</i><i>♥</i><i>♥</i><i>♥</i><i>♥</i><i>♥</i></div>
+
+  <svg class="whip" viewBox="0 0 460 260" role="img" aria-label="Чёрная кожаная плётка">
+    <!-- lash -->
+    <path d="M118 168 C 190 150, 220 60, 300 70 S 400 150, 430 70" fill="none" stroke="#111" stroke-width="12" stroke-linecap="round"/>
+    <path d="M118 168 C 190 150, 220 60, 300 70 S 400 150, 430 70" fill="none" stroke="#5a5a5a" stroke-width="3" stroke-dasharray="6 9" stroke-linecap="round"/>
+    <path d="M430 70 l12 -18 M430 70 l-2 -22 M430 70 l20 -6" stroke="#111" stroke-width="4" stroke-linecap="round"/>
+    <!-- handle -->
+    <g transform="rotate(-18 70 190)">
+      <rect x="10" y="172" width="120" height="36" rx="18" fill="#111"/>
+      <g stroke="#6b6b6b" stroke-width="3"><path d="M34 174v32M52 174v32M70 174v32M88 174v32M106 174v32"/></g>
+      <rect x="2" y="168" width="22" height="44" rx="10" fill="#1b1b1b" stroke="#6b6b6b" stroke-width="2"/>
+      <circle cx="8" cy="190" r="6" fill="none" stroke="#6b6b6b" stroke-width="3"/>
+    </g>
+  </svg>
+
+  <h1>Пригласительное для Мельникова Данила</h1>
+  <p class="sub">Приглашаем вас на развлекательную программу сегодня вечером</p>
+
+  <section class="card" aria-label="Детали приглашения">
+    <dl>
+      <dt>Время</dt>
+      <dd class="time">сегодня, 20:00</dd>
+      <dt>Программа</dt>
+      <dd>Любовные утехи и развратные действия</dd>
+      <dt>Место</dt>
+      <dd>Магазин ООО «ТСОСИ ДАНИЛУ»</dd>
+      <dt>Количество гостей</dt>
+      <dd>1</dd>
+      <dt>Организатор</dt>
+      <dd>София</dd>
+    </dl>
+  </section>
+</main>
+</body>
+</html>
